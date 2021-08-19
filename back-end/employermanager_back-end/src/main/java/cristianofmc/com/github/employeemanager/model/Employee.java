@@ -10,14 +10,16 @@ public class Employee implements Serializable{
     @Column(nullable = false, updatable = false)
     private Long id;
     private String name;
+    private String email;
     private String jobTitle;
     private String phone;
     private String imageUrl;
     @Column(nullable = false, updatable = false)
     private String employeeCode;
 
-    public Employee(Long id, String name, String jobTitle, String phone, String imageUrl, String employeeCode) {
-        this.id = id;
+    public Employee(){}
+
+    public Employee(String name, String email, String jobTitle, String phone, String imageUrl, String employeeCode) {
         this.name = name;
         this.jobTitle = jobTitle;
         this.phone = phone;
@@ -37,6 +39,12 @@ public class Employee implements Serializable{
     }
     public void setName(String name) {
         this.name = name;
+    }
+    public String getEmail() {
+        return email;
+    }
+    public void setEmail(String email) {
+        this.email = email;
     }
     public String getJobTitle() {
         return jobTitle;
