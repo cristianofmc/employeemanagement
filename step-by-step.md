@@ -1,6 +1,10 @@
+#### Steps used to create this project
+
 #### Back end
 1. `sudo apt install default-jdk`
 2. [start.spring.io](http://start.spring.io)
+
+    Add dependences:
     * Spring Web
     * Spring Data JPA
     * MySQL Driver
